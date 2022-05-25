@@ -2,13 +2,12 @@
     <head>
     </head>
     <body>
-        <h1 id="título"><span>Hello</span> World!</h1>
-        <p>Aqui vem um paragrafo de texto.</p>
-        <p class="textoRoxo">Aqui tem outro paragrafo</p>
-        <img scr="http://www.pudim.com.br/pudim.jpg">
-        <ol class="textoRoxo">
-            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat odio officiis, officia repellat recusandae maxime fugiat error, voluptates rerum iure assumenda quasi numquam animi nam possimus autem minus debitis ad!</li>
-            <li>aqui vem o segundo item da lista</li>
-        </ol>
+        <h1 id="titulo"><span>Hello</span></h1>
+        {% for entrada in entradas %}
+        <h2> {{ entrada.titulo }} </h2>
+        <p > {{ entrada.texto }} </p> 
+        {% endfor %}
+
+        
     </body>
 </html>
